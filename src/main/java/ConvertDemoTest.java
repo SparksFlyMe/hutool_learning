@@ -196,8 +196,12 @@ public class ConvertDemoTest {
         System.out.println(result);
     }
 
+    /**
+     * 调起自定义转换器
+     */
     @Test
     public void toUserFined2() {
+        // 获取全局单例对象
         ConverterRegistry converterRegistry = ConverterRegistry.getInstance();
         //  此处做为示例自定义String转换，因为Hutool中已经提供String转换，请尽量不要替换
         //  替换可能引发关联转换异常（例如覆盖String转换会影响全局）
