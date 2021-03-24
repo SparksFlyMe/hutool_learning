@@ -196,8 +196,7 @@ public class ConvertDemoTest {
         System.out.println(result);
     }
 
-
-
+    @Test
     public void toUserFined2() {
         ConverterRegistry converterRegistry = ConverterRegistry.getInstance();
         //  此处做为示例自定义String转换，因为Hutool中已经提供String转换，请尽量不要替换
@@ -205,7 +204,7 @@ public class ConvertDemoTest {
         converterRegistry.putCustom(String.class, MyCustomConverter.class);
         int a = 454553;
         String result = converterRegistry.convert(String.class, a);
-
+        System.out.println(result);
 
     }
 
