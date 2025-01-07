@@ -16,7 +16,7 @@ public class QrCodeTest {
     public void qrCodeTest() {
         QrConfig qrConfig = new QrConfig(500, 500);
 //        qrConfig.setBackColor(Color.blue);
-        String content = "https://m.huajifen.com/hjf/home/197?hjf_source=HUAJIFEN9908HUAJIFEN";
+        String content = "https://www.baidu.com";
         QrCodeUtil.generate(content, qrConfig, new File("E:\\qrCode.jpg"));
     }
 }
